@@ -49,7 +49,7 @@ PROMPT+="${PROMPT_DIR_COLOR} %1~${PROMPT_RESET_COLOR}"
 # This calls our function. PROMPT_SUBST ensures $(...) is executed.
 PROMPT+='$(_zsh_prompt_git_segment)'
 # Prompt symbol: % (or # for root)
-PROMPT+=' : '
+PROMPT+=': '
 
 # Optional: Clean up global color variables if you prefer, though often they are kept.
 # unset PROMPT_USER_COLOR PROMPT_DIR_COLOR PROMPT_GIT_COLOR PROMPT_RESET_COLOR
